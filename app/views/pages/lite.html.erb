@@ -1,4 +1,7 @@
-<div class="container main" >
+<script src="assets/javascripts/lite.js"></script>
+
+
+<div class="container" >
 
 <table class="table table-responsive">
 
@@ -39,11 +42,10 @@
       
     </tr>
 
+    <tr>
 
-  </tbody>
-
-</table>
-
+      <td>
+      
       <H3>MagicInfo Lite player Licensing model</H3>
       </br>
       <p><i class="fa fa-check"></i> Each display requires an individual license in order to connect to the MagicInfo server software</p>
@@ -51,17 +53,44 @@
       <p><i class="fa fa-check"></i> Additional displays may be added using a purchasable license per display to be added</p>
       <p><b>(Part # CY-MILSSTS)</b></p>
       
-      <p>Calculate additional MagicInfo Lite licenses</p>
-      <p>*Consider you can first enable free 25 licenses on your server</p> 
-      
+      <td rowspan="1">
+    </br>
+      <h4><p>Calculate additional MagicInfo Lite licenses</p></h4>
+          </br>
+            <div >
 
-          </div>
+                <form name='myform'  class="form-inline">     
+                  <div class="well">
+                      
+                      <div class="form-group">
+               </br>        
+                        <input type="text" name="lite" value ="" class="form-control" placeholder="Number of Displays"> 
+                        <button type="button" class="btn btn-primary" onclick = "check(); return false ">Calculate</button>
+
+                      </div>
+
+                  </div>
+                  
+                </form>
+              
+            </div>
+            
+            </br>
+            
+           <h4> <p>Additional required licenses: </p></h4>  <h3><p id="f1"></p></h3>
       
-      
-      
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
 
 
-</div>
+            
+</div>          
+            
+            
+           
                 
-
-    
+      

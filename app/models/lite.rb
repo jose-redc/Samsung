@@ -1,0 +1,2 @@
+class Lite < ApplicationRecord
+end
