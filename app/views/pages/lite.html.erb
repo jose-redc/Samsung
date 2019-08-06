@@ -1,29 +1,8 @@
-<script >
-
-  function isInputNumber(evt){
-      
-      var ch = String.fromCharCode(evt.which);
-      
-      if(!(/[0-9]/.test(ch))){
-          evt.preventDefault();
-      }
-      
-  }
-  
-  function keyCode(event){
-    var w = event.keyCode;
-    
-    if (w == 13) {
-      document.getElementById('f1').innerHTML = document.myform.lite.value;
-    }
-  }
-            
-
-    function check(){
-      document.getElementById('f1').innerHTML = document.myform.lite.value;
-
-      }
-
+<script>
+function isInputNumber(evt){var ch=String.fromCharCode(evt.which);
+if(!(/[0-9]/.test(ch))){evt.preventDefault()}}
+function check(){document.getElementById('f1').innerHTML=document.myform.lite.value;document.myform.reset()}
+function keyCode(event){var w=event.keyCode;if(w==13){document.getElementById('f1').innerHTML=document.myform.lite.value;document.myform.reset()}}
 </script>
 
 
@@ -90,7 +69,8 @@
                       
                       <div class="form-group">
                </br>        
-                        <input type="text" name="lite" value ="" class="form-control" placeholder="Number of Displays" onkeypress="isInputNumber(event)" onkeydown = "keyCode(event)"> 
+                        <input type="text" name="lite" value ="" class="form-control" placeholder="Number of Displays" onkeypress="isInputNumber(event)" 
+                            onkeydown = "keyCode(event)"> 
                         <button name = "button" type="button" class="btn btn-primary" onclick = "check(); return false ">Calculate</button>
 
                       </div>
@@ -103,7 +83,8 @@
             
             </br>
             
-           <h4> <p>Total required licenses. First 25 will have no cost: </p></h4>  <h3><p id="f1"></p></h3>
+           <h4> <p>Total required licenses. (first 25 will have no cost): </h4>
+           <p><h3 id="f1"></h3></p>
       
       </td>
     </tr>
@@ -114,7 +95,10 @@
 
 
             
-</div>          
+</div>      
+
+
+<br>
             
             
            
