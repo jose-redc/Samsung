@@ -1,0 +1,101 @@
+<script>
+function isInputNumber(evt){var ch=String.fromCharCode(evt.which);
+if(!(/[0-9]/.test(ch))){evt.preventDefault()}}
+function check(){document.getElementById('f1').innerHTML=document.myform.lite.value;document.myform.reset()}
+function keyCode(event){var w=event.keyCode;if(w==13){document.getElementById('f1').innerHTML=document.myform.lite.value;document.myform.reset()}}
+</script>
+
+
+<div class="container" >
+
+<table class="table table-responsive">
+
+  <tbody>
+    <tr>
+     
+      <td rowspan="1", colspan="1"><%= image_tag ('lite1.PNG'), class: "img-responsive" %></td>
+      
+      <td>
+      
+      <p> <i class="fa fa-check"></i> MagicInfo Lite is Samsung’s entry level enterprise-class digital signage software</p>
+      <p> <i class="fa fa-check"></i> Included with every SMART Signage LFD, is an onboard SoC <b>(System on Chip)</b> media player</p>
+      <p> <i class="fa fa-check"></i> It removes the need to integrate a separate media player into the display system</p>
+      <p> <i class="fa fa-check"></i> Supported formats - Videos (MP4, WMV), photos (JPG), PDF, PowerPoint and Word</p>
+      <p> <i class="fa fa-check"></i> MagicInfo provides easy content scheduling and detailed hardware management</p>
+      <p> <i class="fa fa-check"></i> Authoring tool - WebAuthor - <b>Only</b> enabled on MagicInfo Premium Player <b>not</b> Lite</p>
+      </td>
+      
+      
+    </tr>
+    
+    
+    <tr>
+
+      <td>
+      
+      <p> <i class="fa fa-check"></i> The onboard MagicInfo Player, a system on a chip (SoC), allows you to play specific types of content files, either on demand, or according to a basic schedule</p>
+      <p> <i class="fa fa-check"></i> All SoC LFDs are equipped with an onboard USB port, for connecting standard USB flash drives</p>
+      <p> <i class="fa fa-check"></i> Content can be played directly from an attached USB drive, or from internal memory</p>
+      
+      <p> <i class="fa fa-check"></i> By installing MagicInfo Server on a Windows PC, and connecting it to a network, 
+      multiple MagicInfo Lite LFDs can be connected and allow for centralized management, content publishing, and scheduling</p>
+      
+      <p> <i class="fa fa-check"></i> LFDs can be on the same network as the server, or on different networks, connected via the Internet</p>
+      </td>
+      
+      <td rowspan="1", colspan="1"><%= image_tag ('lite2.PNG'), class: "img-responsive" %></td>
+      
+    </tr>
+
+    <tr>
+
+      <td>
+      
+      <H3>MagicInfo Lite player Licensing model</H3>
+      </br>
+      <p><i class="fa fa-check"></i> Each display requires an individual license in order to connect to the MagicInfo server software</p>
+      <p><i class="fa fa-check"></i> The Server comes with the first 25 LFDs licensed at no cost to the user</p>
+      <p><i class="fa fa-check"></i> Additional displays may be added using a purchasable license per display to be added</p>
+      <p><b>(Part # CY-MILSSTS)</b></p>
+      
+      <td rowspan="1">
+    </br>
+      <h4><p>Calculate required MagicInfo Lite licenses</p></h4>
+          </br>
+            <div >
+
+                <form name='myform'  class="form-inline">     
+                  <div class="well">
+                      
+                      <div class="form-group">
+               </br>        
+                        <input type="text" name="lite" value ="" class="form-control" placeholder="Number of Displays" onkeypress="isInputNumber(event)" 
+                            onkeydown = "keyCode(event)"> 
+                        <button name = "button" type="button" class="btn btn-primary" onclick = "check(); return false ">Calculate</button>
+
+                      </div>
+
+                  </div>
+                  
+                </form>
+              
+            </div>
+            
+            </br>
+            
+           <h4> <p>Total required licenses. (first 25 will have no cost): </h4>
+           <p><h3 id="f1"></h3></p>
+      
+      </td>
+    </tr>
+
+  </tbody>
+
+</table>
+
+
+            
+</div>      
+
+
+<br>

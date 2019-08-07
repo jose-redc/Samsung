@@ -49,7 +49,8 @@ td {
 
 .navbar-brand {
   font-family: 'Poppins', sans-serif;
-  font-weight: 800;
+  font-weight: 1000;
+  
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -118,16 +119,69 @@ td {
 
 .landing-text {
   display: table-cell;
-  text-align: left;
   vertical-align: middle;
   color: white;
-  padding-top: 50px;
+  padding-top: 150px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .landing-text .h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 500%;
   font-weight: 700;
-  
 }
 
+.padding {
+  padding: 80px 0;
+}
+
+.padding img {
+  width: 100%;
+}
+
+#fixed {
+  background: image-url('img_overview_configuration_01.jpg') no-repeat center center fixed;
+  display: table;
+  height: 10%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  background-color: #363636;
+  padding: 5% 5% 10% 5%;
+  color: #a6a6a6;
+}
+
+#fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #FFF;
+}
+
+#fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+}
+
+.icon {
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .landing-text {
+    font-size: 300%;
+  }
+  #fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .icon {
+    padding-top: 5%;
+    margin: auto;
+    width: 50%;
+  }
+}
